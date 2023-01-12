@@ -1,0 +1,112 @@
+#urlForm, #m3u8List{
+    display: none;
+}
+.bg-dark .nav-pills .nav-link.active, 
+.bg-dark .nav-pills .show>.nav-link,
+.bg-dark .navbar-nav .active{
+    background-color: unset;
+}
+.bg-dark .dropdown-menu,
+.bg-dark .dropdown-menu>.dropdown-item{
+    background-color: transparent;
+    color:#fff;
+}
+.bg-dark .dropdown-menu{
+    background-color: #0000001a;
+}
+.bg-dark .dropdown-menu>.dropdown-item:hover{
+    background-color: unset;
+}
+main{
+    margin-top: 50px;
+}
+
+@media (min-width: 768px){
+    .bg-dark .dropdown-menu,
+    .bg-dark .dropdown-menu>.dropdown-item{
+        background-color: #222;
+    }
+    .bg-dark .dropdown-menu>.dropdown-item:hover,
+    .bg-dark .nav-pills .nav-link.active, 
+    .bg-dark .nav-pills .show>.nav-link,
+    .bg-dark .navbar-nav .active,
+    .bg-dark .dropdown-menu .dropdown-item.btn-outline-light{
+        border: 1px solid #fff;
+        border-radius: 5px;
+    }
+    .bg-dark .dropdown-menu{
+        max-height: 300px;
+        max-width: 300px;
+        overflow: auto;
+    }  
+    .navbar-expand-md .navbar-nav {
+        max-height: 40px;
+    }
+    .dropdown-menu{
+        left: unset;
+        right: 0;
+    }
+}
+.navbar-nav .nav-item.dropdown .nav-link:not(.disabled){
+    color: rgb(223, 224, 152);
+}
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#m3u8List .dropdown>a{
+    color: yellow;
+}
+#m3u8List .dropdown-menu {
+    background-color: #000000;
+    border: 1px solid #999;
+    max-height: 400px;
+    z-index: 10000;
+    overflow: auto;
+    max-width: 400px;
+    direction: rtl;
+}
+
+#m3u8List .dropdown-item{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    direction: ltr;
+}
+#m3u8List a,
+#m3u8List a:hover,
+#m3u8List a:focus,
+#m3u8List a:active
+{
+    color: white;
+}
+#channels .media img{
+    max-width: 64px;
+}
+#channels .media{
+    height: 64px;
+    text-align: left;
+    color: white;
+    cursor: pointer;
+}
+#channels, #channels .media:hover{
+    background-color: rgba(255,255,255,.15);
+}
+footer a,
+footer a:hover,
+footer a:focus,
+footer a:active
+{
+    color: white;
+}

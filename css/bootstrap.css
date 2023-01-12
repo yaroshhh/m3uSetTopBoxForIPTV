@@ -1,0 +1,28 @@
+.container{
+    max-width: 900px;
+}
+.navbar-text {
+    width: 100%;
+}
+span.glyphicon{
+	vertical-align: inherit;
+}
+.embed-responsive-16by9 {
+    margin-left: auto;
+    margin-right: auto;
+}
+.embed-responsive-4by3 {
+    margin-left: auto;
+    margin-right: auto;
+}
+.form-horizontal{
+    margin: 0 25px;
+}
+iframe{
+	overflow: hidden !important;
+}
+span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}

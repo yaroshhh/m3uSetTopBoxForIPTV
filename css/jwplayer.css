@@ -1,0 +1,37 @@
+.jw-related-item-poster {
+    background-size: contain;
+}
+.jw-plugin-related, .jw-related-item-container, .jw-related-item-content {
+  background-color: rgba(255,255,255,.1);
+}
+.jw-shelf-widget .jw-related-shelf-contents{
+    background-color: #080808;
+    color: #fff;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 13px;
+  }
+  .jw-shelf-widget .jw-related-shelf-item .jw-related-shelf-item-image {
+      background-color: #ffffff2e;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+  .jw-shelf-widget .jw-related-shelf-item .jw-related-shelf-item-title{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .jw-title {
+      display: block;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+      text-shadow: black 1px 0px 2px;
+  }
+  .jw-flag-user-inactive .jw-title {
+    display: none;
+  }
+  .jw-shelf-widget .jw-related-more{
+    margin: 0 0 20px 38px;
+  }
+
+  .jw-preview {
+    background-color: #666;
+  }

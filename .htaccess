@@ -1,0 +1,21 @@
+Options +FollowSymLinks -Indexes
+RewriteEngine On
+
+# force https 
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# m3u generator
+RewriteCond %{REQUEST_URI} ^/m3u8/.*$
+RewriteRule ^m3u8/([^/.]+)?$ /m3u8/gen.php?type=$1 [L,QSA,END]
+
+RewriteCond %{REQUEST_URI} ^/m3u8/.*/.*$
+RewriteRule ^m3u8/([^/.]+)/([^/.]+)?$ /m3u8/gen.php?type=$1 [L,QSA,END]
+
+# js generator
+RewriteCond %{REQUEST_URI} ^/js/.*/.*$
+RewriteRule ^js/([^/.]+)/([^/]+)?$ /js/index.php?js=$1&type=$2 [L,QSA,END]
+
+# css generator
+RewriteCond %{REQUEST_URI} ^/css/.*/.*$
+RewriteRule ^css/([^/.]+)/.([^/.]+)?$ /css/index.php?css=$1&type=$2 [L,QSA,END]

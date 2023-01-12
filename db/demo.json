@@ -1,0 +1,25 @@
+{
+    "demo": [
+        {
+            "id": "demo.unified-streaming",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Tv_color.png/640px-Tv_color.png",
+            "title": "Tears of Steel",
+            "url": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+        },{
+            "id": "demo.apple",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
+            "title": "Apple",
+            "url": "https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8"
+        },{
+            "id": "demo.akamai",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Akamai_logo.svg",
+            "title": "Akamai",
+            "url": "https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8"
+        },{
+            "id": "demo.dolby",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Dolby-Digital-Plus.svg/640px-Dolby-Digital-Plus.svg.png",
+            "title": "Dolby",
+            "url": "https://d3rlna7iyyu8wu.cloudfront.net/skip_armstrong/skip_armstrong_multichannel_subs.m3u8"
+        }
+    ]
+}

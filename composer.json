@@ -1,0 +1,34 @@
+{
+    "name": "yarosh/mu3settopboxiptv",
+    "description": "This project lets you build an IP-TV set-top box with a web page that can parse the m3u file from your tv provider and serve it to an HTML5 HLS video player",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yaron Helfer",
+            "email": "yaroshhh@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.3.0",
+        "twbs/bootstrap": "4.6.2",
+        "components/jquery": "3.5.1",
+        "popper.js/popper-core": "1.16.0"
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "popper.js/popper-core",
+                "version": "1.16.0",
+                "dist": {
+                    "url": "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js",
+                    "type": "file"
+                },
+                "autoload": {
+                    "classmap": ["/"]
+                }
+            }
+        }
+    ]
+}
