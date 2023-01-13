@@ -1,5 +1,5 @@
 # m3uSetTopBoxForIPTV
-This project lets you build an IP-TV set-top box with a web page that can parse the m3u file from your tv provider and serve it to an HTML5 HLS video player
+This project lets you build an IP-TV set-top box with a simple web page that can parse the m3u file supplyed by your tv provider and serve both live-tv and video on-demand via HTML5 HLS video player
 
 ## Requirements
 - PHP 7.4 
