@@ -1,12 +1,8 @@
 <?PHP
 require_once __DIR__ . '/../config.php';
+require_once __DIR__ . '/../lib/dependencies.php';
 
-
-$dependencies = [
-    'jquery.min.js'    => '../vendor/components/jquery/jquery.min.js', 
-    'popper.min.js'    => '../vendor/popper.js/popper-core/popper.min.js',
-    'bootstrap.min.js' => '../vendor/twbs/bootstrap/dist/js/bootstrap.min.js',
-];
+$dependencies = $vendor['js'];
 
 //deal with js maps
 if(isset($_GET['type']) && strpos($_GET['type'],'.map') !== false){

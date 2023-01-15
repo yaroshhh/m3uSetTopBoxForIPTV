@@ -1,5 +1,6 @@
 <?PHP
 require_once __DIR__ . '/../config.php';
+require_once __DIR__ . '/../lib/dependencies.php';
 
 //set content type
 @header('Content-Type: text/css');
@@ -8,9 +9,7 @@ define('SKIP_HEADERS',true);
 
 $data = '';
 
-$dependencies = [
-    '..//vendor/twbs/bootstrap/dist/css/bootstrap.min.css',
-];
+$dependencies = $vendor['css'];
 
 $local = isset($_GET['css']) ? explode(',',$_GET['css']) : [];
 
