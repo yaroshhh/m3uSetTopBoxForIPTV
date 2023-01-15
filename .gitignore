@@ -1,6 +1,10 @@
 .well-known
 cgi-bin
 /vendor/
+.docker-iptv/logs/*
+.docker-iptv/ssl/*
+.docker-iptv/.env
+temp
 composer.lock
 composer.phar
 config.php
