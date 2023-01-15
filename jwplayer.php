@@ -1,4 +1,11 @@
-<?PHP require_once "config.php" ?>
+<?PHP
+  header_remove("X-Powered-By");
+  require_once __DIR__ . '/config.php';
+  //set content type
+  @header('Content-Type: text/html');
+  @header('Content-Encoding: gzip'); 
+  ob_start();
+?>
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
@@ -21,3 +28,8 @@
 <script type="text/javascript" src="js/jwplayer.js"></script>
 </body>
 </html>
+<?php
+  $html = ob_get_clean();
+  $output = gzencode($html);     
+  die($output);
+?>

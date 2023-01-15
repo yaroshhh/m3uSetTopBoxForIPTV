@@ -92,7 +92,8 @@
             //if(stream == undefined) continue;
             var title = $('<h5/>').html(stream.title).addClass('mt-0 mb-1');
             var img   = stream.logo ? $('<img/>').attr('src',stream.logo) : $("<div/>");
-            img.addClass('align-self-center mx-2 px-1').attr('alt',stream.name);
+            img.addClass('align-self-center mx-2 px-1').attr('alt',stream.name)
+               .width('64px').height('*');
             var body  = $('<div/>').addClass('media-body align-self-center').append(title);
             var media = $('<li/>').attr('data-channel', x.id).addClass('media').append([img, body]);
             var pid = eval("i");

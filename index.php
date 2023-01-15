@@ -1,8 +1,16 @@
-<?PHP require_once "config.php" ?>
+<?PHP 
+  header_remove("X-Powered-By");
+  require_once "config.php";
+  //set content type
+  @header('Content-Type: text/html');
+  @header('Content-Encoding: gzip'); 
+  ob_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Online M3U SetTopBox</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -49,6 +57,8 @@
     <main role="main" class="inner cover">
       <div class="row">
         <div class="col-12">
+          <h1>Online M3U Tester</h1>
+          <h2>IPTV online set-top box</h2>
           <ul class="nav justify-content-center mb-2" id="m3u8List"></ul>
         </div>
       </div>
@@ -84,3 +94,8 @@
 </body>
 
 </html>
+<?php
+  $html = ob_get_clean();
+  $output = gzencode($html);     
+  die($output);
+?>

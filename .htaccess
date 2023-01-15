@@ -5,6 +5,18 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# redirect www to non-www 
+RewriteCond %{HTTPS_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# robots.txt
+RewriteCond %{REQUEST_URI} ^/robots.txt.*$
+RewriteRule ^robots.txt?$ /robots.php [L,QSA,END]
+
+# site_map.xml
+RewriteCond %{REQUEST_URI} ^/site_map.xml.*$
+RewriteRule ^site_map.xml?$ /site_map.php [L,QSA,END]
+
 # m3u generator
 RewriteCond %{REQUEST_URI} ^/m3u8/.*$
 RewriteRule ^m3u8/([^/.]+)?$ /m3u8/gen.php?type=$1 [L,QSA,END]
