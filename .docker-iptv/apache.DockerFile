@@ -4,8 +4,11 @@
 ARG PHP_VER=$PHP_VER
 FROM php:$PHP_VER-apache
 
-#RUN pecl channel-update pecl.php.net
-#RUN pecl install xdebug
+RUN apt-get update
+RUN apt-get -y upgrade
+
+RUN pecl channel-update pecl.php.net
+RUN pecl install xdebug-3.1.6
 
 RUN a2enmod rewrite && a2enmod ssl && a2enmod socache_shmcb
 
