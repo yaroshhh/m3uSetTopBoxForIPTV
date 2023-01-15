@@ -2,7 +2,7 @@
     $CFG = '{
         "player_type"      : "jwplayer",
         "jwplayer_cdn_url" : "JWPLAYER_CDN_URL",
-        "demo_list"        : "israel.livetv.json"
+        "demo_list"        : "demo.json"
     }';
     $CFG = json_decode($CFG);
 
