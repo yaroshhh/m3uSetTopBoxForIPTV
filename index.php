@@ -55,6 +55,11 @@
       </nav>
     </header>
     <main role="main" class="inner cover">
+      <?php 
+        if(file_exists(__DIR__.'/lib/custom_body_top.php')){
+          require_once __DIR__.'/lib/custom_body_top.php';
+        }
+      ?>
       <div class="row">
         <div class="col-12">
           <h1>Online M3U Tester</h1>
@@ -83,9 +88,19 @@
           <ul class="list-unstyled mx-3 mx-md-0" id="channels"> </ul>
         </div> <!-- col-md-4 -->
       </div> <!-- Row -->
+      <?php 
+        if(file_exists(__DIR__.'/lib/custom_body_bootom.php')){
+          require_once __DIR__.'/lib/custom_body_bootom.php';
+        }
+      ?>
     </main>
 
     <footer class="mastfoot mt-auto">
+      <?php 
+        if(file_exists(__DIR__.'/lib/custom_footer.php')){
+          require_once __DIR__.'/lib/custom_footer.php';
+        }
+      ?>
       <div class="inner">
         <p class="text-center navbar-text text-light">© 2020 <a href="https://yaronhelfer.com">Yaron Helfer</a>. All Rights Reserved.</p>
       </div>
