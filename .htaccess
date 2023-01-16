@@ -16,6 +16,12 @@ RewriteRule ^robots.txt?$ /robots.php [L,QSA,END]
 # site_map.xml
 RewriteCond %{REQUEST_URI} ^/site_map.xml.*$
 RewriteRule ^site_map.xml?$ /site_map.php [L,QSA,END]
+RewriteCond %{REQUEST_URI} ^/sitemap.xml.*$
+RewriteRule ^site_map.xml?$ /site_map.php [L,QSA,END]
+
+#service worker
+RewriteCond %{REQUEST_URI} ^/sw.js?$
+RewriteRule ^sw.js$ service_worker.php [L]
 
 # m3u generator
 RewriteCond %{REQUEST_URI} ^/m3u8/.*$

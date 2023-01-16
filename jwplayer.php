@@ -9,6 +9,10 @@
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
+<link rel=”preload” href=”css/styles.css” as=”style” />
+<link rel="preload" href="/vendor/components/jquery/jquery.min.js" as="script" />
+<link rel="preload" href="<?=$CFG->jwplayer_cdn_url?>" as="script" />
+<link rel="preload" href="/js/jwplayer.js" as="script" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 <meta name="robots" content="noindex">

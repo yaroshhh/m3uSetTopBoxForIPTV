@@ -9,6 +9,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel=”preload” href=”css/bootstrap,styles/.css” as=”style” />
+  <link rel="preload" href="/js/bootstrap,stb/.js" as="script" />
+  <link rel="preload" href="<?=$CFG->jwplayer_cdn_url?>" as="script" />
   <title>Online M3U SetTopBox</title>
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">

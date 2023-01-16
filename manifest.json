@@ -1,0 +1,9 @@
+{
+  "short_name": "onlineM3UIPTVsetTopBox",
+  "name": "Online M3U SetTopBox",
+  "description": "Test IPTV service using an online M3U8 testing player for free with an easy to use tool",
+  "theme_color": "#343a40",
+  "background_color": "#FFFFFF",
+  "start_url": "/",
+  "display": "standalone"
+}
