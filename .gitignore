@@ -1,12 +1,13 @@
 .well-known
 cgi-bin
 /vendor/
-.docker-iptv/logs/*
-.docker-iptv/ssl/*
-.docker-iptv/.env
+.iptv-docker/logs/*
+.iptv-docker/ssl/*
+.iptv-docker/.env
 temp
 composer.lock
 composer.phar
 config.php
 db/*.livetv.json
 lib/custom_*.php
+ads.txt
