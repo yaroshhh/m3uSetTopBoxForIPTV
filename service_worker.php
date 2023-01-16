@@ -9,7 +9,7 @@ $filesToCache = [];
  */
 $css_dirs = [
   'css',
-  '/vendor/twbs/bootstrap/dist/css/'
+  'vendor/twbs/bootstrap/dist/css/'
 ];
 
 foreach($css_dirs as $dir){
@@ -23,9 +23,9 @@ foreach($css_dirs as $dir){
  */
 $js_dirs = [
   'js',
-  '/vendor/components/jquery/',
-  '/vendor/popper.js/popper-core/',
-  '/vendor/twbs/bootstrap/dist/js/'
+  'vendor/components/jquery/',
+  'vendor/popper.js/popper-core/',
+  'vendor/twbs/bootstrap/dist/js/'
 ];
 
 foreach($js_dirs as $dir){
