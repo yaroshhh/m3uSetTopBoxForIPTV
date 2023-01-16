@@ -19,11 +19,11 @@
                 continue;
             }
             item = {
+                //"mediaid": ch.id,
                 "sources": sources,
                 "image": ch.logo || null,
                 "title": ch.title,
-                "description": group,
-                "mediaid": ch.id
+                "description": group
             }    
             playlist.push(item);
         }
@@ -160,7 +160,7 @@
                     }else{
                         player[cmd.action].call(this, cmd.params);
                     }
-                    console.info("user action triggered for "+cmd.action+"("+JSON.stringify(cmd.params)+")");
+                    //console.info("user action triggered for "+cmd.action+"("+JSON.stringify(cmd.params)+")");
                 }
             });
             player.on('error', errHandler);
@@ -203,7 +203,7 @@
         if(!config){
             console.error('cannot get group\'s media properties');
         }
-        console.log("loading player with: ",config);
+        //console.log("loading player with: ",config);
         build_player();
     })();
 

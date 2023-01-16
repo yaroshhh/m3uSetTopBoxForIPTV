@@ -119,7 +119,7 @@
             streams.push(ch);
         }
         if(streams.length > 0){
-            console.log(streams.length+" items found");
+            //console.log(streams.length+" items found");
             loadStreamsList(streams);
             return true;
         }else{
