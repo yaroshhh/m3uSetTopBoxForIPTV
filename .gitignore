@@ -11,3 +11,4 @@ config.php
 db/*.livetv.json
 lib/custom_*.php
 ads.txt
+.DS_Store
