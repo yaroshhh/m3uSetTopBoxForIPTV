@@ -37,3 +37,5 @@ RewriteRule ^js/([^/.]+)/([^/]+)?$ /js/index.php?js=$1&type=$2 [L,QSA,END]
 # css generator
 RewriteCond %{REQUEST_URI} ^/css/.*/.*$
 RewriteRule ^css/([^/.]+)/.([^/.]+)?$ /css/index.php?css=$1&type=$2 [L,QSA,END]
+
+RedirectMatch 404 /\.git
